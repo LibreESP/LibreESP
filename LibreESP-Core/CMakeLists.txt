@@ -1,4 +1,4 @@
-add_library(libreesp-core "")
+add_library(libreesp-core src/chrono.cpp)
 target_include_directories(libreesp-core
         PUBLIC
             include
