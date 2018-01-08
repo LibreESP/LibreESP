@@ -1,0 +1,9 @@
+BasedOnStyle: LLVM
+IndentWidth: 3
+ColumnLimit: 120
+
+# BraceWrapping
+BreakBeforeBraces: Custom
+# Possible with LLVM 6
+#BraceWrapping:
+#  AfterExternBlock: true
