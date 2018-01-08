@@ -1,6 +1,13 @@
 # Contribution Guidelines
 
 ## Developers
+### Code style
+We use the LLVM style with small modifications. Please run
+```
+> clang-format -style=file <file-to-commit>
+```
+in the root source directory for every file you like to contribute.   
+
 ### Commit Message Format
 We use the [AngularJS commit message format][commit-message-format-origin]. Here a copy from 07.01.2018:
 
@@ -67,5 +74,8 @@ The rest of the commit message is then used for this.
 
 A detailed explanation can be found in this [document][commit-message-format].
 
-[commit-message-format]: https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit#
+
 [commit-message-format-origin]: https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#commit-message-format
+[git-revert]: https://git-scm.com/docs/git-revert
+[closing-issues]: https://help.github.com/articles/closing-issues-via-commit-messages/
+[commit-message-format]: https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/
