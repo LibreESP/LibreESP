@@ -17,3 +17,6 @@ endif(NOT DEFINED CMAKE_TOOLCHAIN_FILE)
 
 project(LibreESP VERSION 0.1.0 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 11)
+
+# Add all libraries below this line.
+add_subdirectory(LibreESP-Core)
