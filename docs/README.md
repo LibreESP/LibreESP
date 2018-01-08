@@ -38,6 +38,8 @@ Now the compiled library can be found in `build/LibreESP-${module_name}/`.
 
 Instead of assign CMake variables at the configuration step you can assign them using a `DevelopmentSettings.cmake` file in the root source directory. Just copy `DevelopmentSettings.cmake.sample` to `DevelopmentSettings.cmake` and replace the default values. 
 
+## Contributing
+Please see [CONTRIBUTING](docs/CONTRIBUTING)
 
 [esp8266]: http://espressif.com/en/products/hardware/esp8266ex/overview
 [nonos]: https://github.com/espressif/ESP8266_NONOS_SDK
