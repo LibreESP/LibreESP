@@ -1,0 +1,20 @@
+# Define system settings
+set(CMAKE_SYSTEM_NAME Generic)
+set(CMAKE_SYSTEM_VERSION 1)
+set(CMAKE_SYSTEM_PROCESSOR ESP8266)
+set(CMAKE_TRY_COMPILE_TARGET_TYPE STATIC_LIBRARY) # Required to successfully compile GCC test programs.
+
+# Setup compiler environment.
+set(COMPILER_BASE xtensa-lx106-elf)
+set(CMAKE_FIND_ROOT_PATH ${ESP8266_COMPILER_ROOT} ${ESP8266_COMPILER_ROOT}/bin ${ESP8266_COMPILER_ROOT}/${COMPILER_BASE}/sysroot)
+set(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM ONLY)
+set(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
+set(CMAKE_FIND_ROOT_PATH_MODE_INCLUDE ONLY)
+
+# Find compiler and other tools
+set(COMPILER_PREFIX ${COMPILER_BASE}-)
+find_program(CMAKE_CXX_COMPILER ${COMPILER_PREFIX}c++)
+find_program(CMAKE_MAKE_PROGRAM make NO_CMAKE_FIND_ROOT_PATH)
+
+# Set only required compiler flags.
+set(CMAKE_CXX_FLAGS_INIT "-nostdlib")
