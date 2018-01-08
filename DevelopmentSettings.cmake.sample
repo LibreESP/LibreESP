@@ -1,0 +1,5 @@
+# This file contains required and optional settings for development. If not used assign the required settings at the
+# configuration step with "-DREQUIRED_SETTING=REQUIRED_VALUE"
+
+# (Required) Root path of the xtensa-gcc-compiler.
+#set(ESP8266_COMPILER_ROOT /opt/esp-open-sdk/xtensa-lx106-elf/)
